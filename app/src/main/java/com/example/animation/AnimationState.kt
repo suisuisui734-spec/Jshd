@@ -1,0 +1,30 @@
+package com.example.animation
+
+enum class AnimationState(
+  val clipIndex: Int,
+  val clipName: String,
+  val durationSec: Float,
+  val looping: Boolean,
+  val defaultBlendSec: Float,
+) {
+  IDLE(0, "Idle", 1.60f, true, 0.16f),
+  WALK(1, "Walk", 0.90f, true, 0.14f),
+  RUN(2, "Run", 0.56f, true, 0.12f),
+  JUMP(3, "Jump", 0.50f, false, 0.08f),
+  FALL(4, "Fall", 0.60f, true, 0.10f),
+  LIGHT_1(5, "Light1", 0.36f, false, 0.06f),
+  LIGHT_2(6, "Light2", 0.38f, false, 0.06f),
+  LIGHT_3(7, "Light3", 0.48f, false, 0.07f),
+  HEAVY_1(8, "Heavy1", 0.62f, false, 0.08f),
+  HEAVY_2(9, "Heavy2", 0.58f, false, 0.08f),
+  LAUNCHER(10, "Launcher", 0.56f, false, 0.07f),
+  AIR_COMBO(11, "AirCombo", 0.46f, false, 0.06f),
+  HIT_REACTION(12, "HitReaction", 0.38f, false, 0.05f),
+  GUARD(13, "Guard", 0.50f, true, 0.08f),
+  DODGE(14, "Dodge", 0.34f, false, 0.05f),
+  SPECIAL_ATTACK(15, "SpecialAttack", 0.72f, false, 0.07f),
+  ULTIMATE_PREP(16, "UltimatePrep", 1.20f, false, 0.10f),
+  ULTIMATE_STRIKE(17, "UltimateStrike", 1.10f, false, 0.06f),
+  VICTORY(18, "Victory", 1.80f, false, 0.16f),
+  DEFEAT(19, "Defeat", 1.40f, false, 0.14f),
+}

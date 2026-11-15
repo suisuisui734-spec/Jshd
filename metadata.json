@@ -1,0 +1,6 @@
+{
+  "name": "Anime Arena Legends",
+  "description": "Native Android 3D anime arena fighting game with Filament rendering, skeletal animation, combo & cinematic ultimate systems, AI opponent, and full audio engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
